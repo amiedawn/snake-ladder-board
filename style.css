@@ -17,7 +17,7 @@ table, td {
 
 
 tr:nth-child(2n) {
-  direction: reverse;
+
 }
 
 .item {
