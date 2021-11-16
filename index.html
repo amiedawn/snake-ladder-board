@@ -8,10 +8,26 @@
     <title>Snakes and Ladders Board</title>
   </head>
   <body>
-    <h1>Snakes and Ladder Basic Game Board</h1>
-    <button type="button" onclick="createTable()">Create Table</button>
-    <table id="myTable"></table>
-    <br>
+    <header class="row-title">
+      <div class="column">
+        <img id="snake" src="assets/images/snake.png" alt="snake" />
+      </div>  
+      <div class="column">
+        <h1>Snakes and Ladders Basic Game Board</h1>
+      </div>
+      <div class="column">
+        <img id="ladder" src="assets/images/ladder.jpg" alt="ladder" />
+      </div>  
+    </header>
+    <div class="container">
+      <section class="roll">
+
+      </section>  
+      <section class="container-board">
+        <button type="button" onclick="createTable()">Create Table</button>
+        <table id="myTable"></table>
+      </section>
+    </div>
   </body>
 
   <script src="index.js"></script>
