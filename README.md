@@ -2,7 +2,7 @@
 
 The goal is to make a game board table that matches the following image (minus the snakes and ladders): <br><br>
 
-![board-screenshot](snakes-ladders-table.png)
+![board-screenshot](./assets/images/snakes-ladders-table.png)
 <br><br>
 ## References:
 
