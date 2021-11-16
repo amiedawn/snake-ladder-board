@@ -11,19 +11,26 @@ button {
 
 table, td {
   border: 1px solid black;
-  transform: scaleY(-1);
+  transform: scaleY(-1); /* numbering bottom to top */
   margin: 0 auto;
 }
 
-
-
+table {
+  display: flex;
+  justify-content: center;
+}
 
 .item {
   padding: 10px;
   font-weight: bold;
-  /* direction: reverse; */
 }
 
-item:nth-child(2n) {
-  transform: rotate(180deg);
+.row-direction:nth-of-type(even) {
+  display: flex;
+  direction: rtl; 
+}
+
+.row-direction:nth-of-type(odd) {
+  display: flex;
+  direction: ltr;
 }

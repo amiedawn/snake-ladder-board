@@ -4,6 +4,7 @@ function createTable() {
   // 10 rows
   for (let i=0; i<10; i++) {
     let row = table.insertRow(i);
+    row.className= "row-direction";
 
     // 10 columns
     for (let j=0; j<10; j++) {
@@ -11,6 +12,5 @@ function createTable() {
       cell.innerHTML = ((i*10) + j + 1); //start with 1 instead of 0
       cell.className = "item";
     }
-
   }
 };
