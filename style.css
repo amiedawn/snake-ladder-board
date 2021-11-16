@@ -1,6 +1,7 @@
 
 body {
   text-align: center;
+  box-sizing: border-box;
 }
  
 button {
@@ -10,7 +11,6 @@ button {
 }
 
 table, td {
-  border: 1px solid black;
   transform: scaleY(-1); /* numbering bottom to top */
   margin: 0 auto;
 }
@@ -21,8 +21,10 @@ table {
 }
 
 .item {
-  padding: 10px;
+  padding: 18px;
   font-weight: bold;
+  border: 1px solid black;
+  flex: 1;
 }
 
 .row-direction:nth-of-type(even) {
