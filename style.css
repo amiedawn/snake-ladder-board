@@ -24,7 +24,8 @@ table {
   padding: 18px;
   font-weight: bold;
   border: 1px solid black;
-  flex: 1;
+  flex: 1; 
+  width: 20px; 
 }
 
 .row-direction:nth-of-type(even) {
