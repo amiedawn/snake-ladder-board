@@ -1,0 +1,28 @@
+
+body {
+  text-align: center;
+}
+ 
+button {
+  background-color: lightblue;
+  font-size: 20px;
+  margin: 20px;
+}
+
+table, td {
+  border: 1px solid black;
+  transform: scaleY(-1);
+  margin: 0 auto;
+}
+
+
+tr:nth-child(2n) {
+  direction: reverse;
+}
+
+.item {
+  padding: 10px;
+  font-weight: bold;
+  /* direction: reverse; */
+}
+
