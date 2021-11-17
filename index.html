@@ -8,6 +8,7 @@
     <title>Snakes and Ladders Board</title>
   </head>
   <body>
+    <!-- header start -->
     <header class="row-title">
       <div class="column">
         <img id="snake" src="assets/images/snake.png" alt="snake" />
@@ -19,15 +20,26 @@
         <img id="ladder" src="assets/images/ladder.jpg" alt="ladder" />
       </div>  
     </header>
-    <div class="container">
-      <section class="roll">
+    <!-- header end -->
 
-      </section>  
+    <!-- GAME PLAY start -->
+      <!-- turn container start-->
+      <div class="container-turn">
+        <section class="roll">
+          <h2><i>Roll the Dice</i></h2>
+          <img src="assets/images/5.png" alt="default-die" class="die-image" />
+          <button class="btn-roll">Make a Move</button>
+        </section>  
+      <!-- turn container end-->
+
+      <!-- board container start -->
       <section class="container-board">
         <button type="button" onclick="createTable()">Create Table</button>
         <table id="myTable"></table>
       </section>
+      <!-- board container end -->
     </div>
+    <!-- GAME PLAY end -->
   </body>
 
   <script src="index.js"></script>
