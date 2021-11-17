@@ -28,27 +28,31 @@ body {
 }
 
 .container {
-  margin-top: 50px;
-  justify-content: space-around;
-  margin: 0 auto;
-  display: inline-flex;
+  justify-content: center;
+  margin: 50px auto;
+  display: inline;
   align-items: center;
 }
 
 .container-turn {
-  margin-top: 50px;
-  margin: 0 auto;
+  margin: 50px auto;
   align-items: center;
-
+  flex-direction: column;
+  justify-content: center;
 }
 
-.roll, .container-board {
-  float: right;
+.roll {
+  box-sizing: border-box;
+  border: 8px dashed lightcoral;
+  padding: 5px;
+  margin: 10px;
+}
+.container-board {
+  
   box-sizing: border-box;
   border: 8px dashed lightcoral;
   padding: 10px;
   margin: 1em;
- /* max-width: 70%;*/
 }
 
 .die-image {
