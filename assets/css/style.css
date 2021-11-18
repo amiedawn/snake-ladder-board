@@ -1,11 +1,13 @@
-
-body {
+ 
+body { 
+  background-color: rgba(128, 240, 240, .4);
   text-align: center;
   box-sizing: border-box;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .row-title {
+  background-color: white;
   margin: 15px;
   align-items: center;
   border: 1px solid lightcoral;
@@ -13,7 +15,7 @@ body {
   box-shadow: 5px 10px 18px black;
 }
 
-.column {
+.row-t {
   flex: 33.33%;
 }
 
@@ -30,45 +32,47 @@ body {
 .container {
   justify-content: center;
   margin: 50px auto;
-  display: inline;
+  /* display: inline;  */
   align-items: center;
 }
 
 .container-turn {
-  margin: 50px auto;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.roll {
+  margin: 1em;
+  left: 2em;
+  width: 40%;
+  height: 28em;
   box-sizing: border-box;
   border: 8px dashed lightcoral;
-  padding: 5px;
-  margin: 10px;
+  padding: 2em 1em;
+  position: absolute;
+  display: block;
+} 
+
+#die-image:active, #die-image:focus { /*trying to get the dice not to move when button clicked, didn't work */
+  position: relative;
 }
+
 .container-board {
-  
   box-sizing: border-box;
   border: 8px dashed lightcoral;
   padding: 10px;
   margin: 1em;
+  right: 2em;
+  position: absolute;
 }
 
-.die-image {
-  width: 12rem;
+#die-image {
+  width: 50%;
   padding: 15px;
 }
 
 button {
-  background-color: lightblue;
+  background-color: white;
   font-size: 20px;
   margin: 20px;
 }
 
-table, td {
-  transform: scaleY(-1); /* numbering bottom to top */
-}
+table, td {transform: scaleY(-1); /* numbering bottom to top */ }
 
 table {
   display: flex;

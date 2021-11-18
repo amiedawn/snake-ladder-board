@@ -7,34 +7,42 @@
     <link rel=stylesheet href="./assets/css/style.css">
     <title>Snakes and Ladders Board</title>
   </head>
+  
   <body>
+   
     <!-- header start -->
     <header class="row-title">
-      <div class="column">
+      <div class="row-t">
         <img id="snake" src="assets/images/snake.png" alt="snake" />
       </div>  
-      <div class="column">
+      <div class="row-t">
         <h1>Snakes and Ladders Basic Game Board</h1>
       </div>
-      <div class="column">
+      <div class="row-t">
         <img id="ladder" src="assets/images/ladder.jpg" alt="ladder" />
       </div>  
     </header>
     <!-- header end -->
 
     <!-- GAME PLAY start -->
-      <!-- turn container start-->
+    <div class="wrapper">
+      <!-- turn container start -->
       <div class="container-turn">
-        <section class="roll">
+        <div class="column">
           <h2><i>Roll the Dice</i></h2>
-          <img src="assets/images/5.png" alt="default-die" class="die-image" />
-          <button class="btn-roll">Make a Move</button>
-        </section>  
-      <!-- turn container end-->
-
+        </div>
+        <div class="column">
+          <img src="assets/images/5.png" alt="default-die" id="die-image" />
+        </div>
+        <div class="column">
+          <button id="btn-roll">Make a Move</button> 
+        </div>
+      </div>  
+      <!-- turn container end -->
+     
       <!-- board container start -->
       <section class="container-board">
-        <button type="button" onclick="createTable()">Create Table</button>
+        <button id="btn-table">Create Table</button>
         <table id="myTable"></table>
       </section>
       <!-- board container end -->
