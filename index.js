@@ -24,7 +24,7 @@ function makeMove() {
   console.log(rollValue);
 
   // display die image
-  showDie.style.display = "block";
+  //showDie.style.display = "block";
   showDie.src = "./assets/images/" + rollValue + ".png";
   console.log(showDie.src);
 };
