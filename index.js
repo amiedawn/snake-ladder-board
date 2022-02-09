@@ -1,5 +1,4 @@
 const showDie = document.getElementById("die-image");
-const rollDie = document.getElementById("btn-roll");
 
 function createTable() {
   let table = document.getElementById("myTable");
@@ -21,12 +20,9 @@ function createTable() {
 function makeMove() {
   // random # between 1 and 6
   let rollValue = Math.floor(Math.random() * 6) + 1;
-  console.log(rollValue);
 
   // display die image
-  //showDie.style.display = "block";
   showDie.src = "./assets/images/" + rollValue + ".png";
-  console.log(showDie.src);
 };
 
 document.getElementById("btn-roll").addEventListener("click", makeMove);

@@ -1,9 +1,9 @@
- 
-body { 
-  background-color: rgba(128, 240, 240, .4);
+body {
+  background-color: rgba(128, 240, 240, 0.4);
   text-align: center;
   box-sizing: border-box;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .row-title {
@@ -23,42 +23,45 @@ body {
   height: 5em;
   width: 5em;
 }
- 
+
 #ladder {
   height: 5em;
   width: 5em;
 }
 
-.container {
-  justify-content: center;
-  margin: 50px auto;
-  /* display: inline;  */
-  align-items: center;
+.wrapper {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: top;
+  flex-wrap: wrap;
+  display: flex;
+  height: 80%;
+  width: 90%;
 }
 
 .container-turn {
-  margin: 1em;
-  left: 2em;
-  width: 40%;
-  height: 28em;
+  height: 100%;
   box-sizing: border-box;
   border: 8px dashed lightcoral;
   padding: 2em 1em;
-  position: absolute;
-  display: block;
-} 
+  display: flex-block;
+  align-items: center;
+  flex: 1 0 40%;
+}
 
-#die-image:active, #die-image:focus { /*trying to get the dice not to move when button clicked, didn't work */
+#die-image:active,
+#die-image:focus {
+  /*trying to get the dice not to move when button clicked, didn't work */
   position: relative;
 }
 
 .container-board {
   box-sizing: border-box;
   border: 8px dashed lightcoral;
-  padding: 10px;
-  margin: 1em;
-  right: 2em;
-  position: absolute;
+  padding: 5px;
+  justify-content: flex-end;
+  flex: 1 0 60%;
 }
 
 #die-image {
@@ -72,7 +75,10 @@ button {
   margin: 20px;
 }
 
-table, td {transform: scaleY(-1); /* numbering bottom to top */ }
+table,
+td {
+  transform: scaleY(-1); /* numbering bottom to top */
+}
 
 table {
   display: flex;
@@ -83,13 +89,13 @@ table {
   padding: 18px;
   font-weight: bold;
   border: 1px solid black;
-  flex: 1; 
-  width: 20px; 
+  flex: 1;
+  width: 20px;
 }
 
 .row-direction:nth-of-type(even) {
   display: flex;
-  direction: rtl; 
+  direction: rtl;
 }
 
 .row-direction:nth-of-type(odd) {
